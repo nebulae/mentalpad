@@ -10,7 +10,5 @@ class MainHandler(handlers.BaseTemplateHandler):
         self.render_template("main.html", {})
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler),
-    # webapp2.Route('/game/<gameid>', handler=GameHandler),
-    # webapp2.Route('/grid/<subreddit>', handler=GridHandler)
+    ('/', MainHandler)
 ], debug=True)
